@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&display=swap');
+html,
+body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+:root {
+  font-size: 16px;
+  font-family: var(--font);
+  line-height: 1.5;
+
+  --normal: #222;
+  --highlight: #24292e;
+  --light: #aaa;
+  --background: #f6f8fa;
+  --red: #d73a49;
+  --green: #28a475;
+  --font: 'Recursive', sans;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  width: 100%;
+  color: var(--highlight);
+  font-size: 1em;
+  text-align: center;
+}
+
+button {
+  display: block;
+  width: 100%;
+  height: 2.5em;
+  margin-top: 1em;
+  color: var(--highlight);
+  font-size: 16px;
+  font-family: var(--font);
+  background-color: var(--background);
+  border: 2px solid var(--highlight);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--background);
+  background-color: var(--highlight);
+}
+
+button:active {
+  padding: 0;
+}
+
+button:disabled {
+  color: var(--light);
+  border-color: var(--light);
+}
+
+button:disabled:hover {
+  color: var(--light);
+  background-color: var(--background);
+  cursor: not-allowed;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 21em;
+  margin-bottom: 1em;
+  color: var(--light);
+  text-align: center;
+  fill: var(--light);
+}
+
+svg {
+  margin-left: 0.8em;
+  vertical-align: top;
+  fill: inherit;
+}
+
+footer > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer:hover {
+  color: var(--highlight);
+  cursor: pointer;
+  fill: var(--highlight);
+}
+
+input {
+  width: 100%;
+  margin: 0;
+  color: var(--highlight);
+}
+
+.container {
+  flex-grow: 1;
+  min-width: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.info-pane {
+  flex-shrink: 0;
+  width: 15em;
+  height: 100%;
+  padding: 0 3em;
+  background-color: #f6f8fa;
+  border-left: 1px solid #ddd;
+}
+
+.info-pane-title {
+  color: var(--highlight);
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.info-good {
+  color: var(--green);
+}
+
+.info-degraded {
+  color: var(--red);
+}
