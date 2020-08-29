@@ -2,4 +2,4 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)
 
-This is a STM32 based joystick and switch HID input device with a fully customizable layout. It is intended to be used as a more precise way to control FRC competition robots.
+The main goal of this project is to create a framework for building mechanism-specific control devices. An example is a robotic arm controller that is a scaled down version of the arm itself. Similarities between the controller and the mechanism can make for a more effective controller and can also flatten the learning curve.
